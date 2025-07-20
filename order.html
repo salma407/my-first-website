@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<body>
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    background-color: #d4e2f1;
+}
+div{
+    color: black;
+    font-size: x-large;
+}
+
+.order-section {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.847);
+}
+
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-section label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.order-section input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0c3e27;
+}
+    </style>
+    <div>Rolex⌚</div>
+    <section id="Order Now" class="order-section">
+  <h2>Place Your Order</h2>
+  <form>
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" min="1" max="10" required>
+
+    <label for="name">Your Name:</label>
+    <input type="text"  name="name" required placeholder="Enter your Name">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" required placeholder="Enter your Phone Number">
+
+    <label for="Adress">Address:</label>
+    <input type="text" name="Adress" required placeholder="Enter your Adress">
+
+    <button type="submit" class="submit-button">Confirm</button>
+  </form>
+</section>
+
+</body>
+</html>
